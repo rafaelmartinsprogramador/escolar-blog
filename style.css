@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+/* 
+    Cores
+        1fundo #EEF5DB
+        2header #3B3561
+        3main #5386E4
+        4aside #f19953
+    
+    Fontes
+        1
+        2
+        3
+*/
+
+/* Declarações Retrato */
+@media screen and (orientation: portrait) {
+    .perfil-1 {
+        position: absolute;
+        display: block;
+        left: 40px;
+        top: 470px;
+        margin-top: 50px;
+    }
+    
+    .perfil-2 {
+        position: absolute;
+        display: block;
+        left: 40px;
+        top: 860px;
+    }
+
+    .perfil-3 {
+        position: absolute;
+        display: block;
+        left: 40px;
+        top: 1190px;
+    }
+
+    article {
+       height: 1500px;
+       min-width: 375px;
+    }
+
+    .conteudo {
+        height: 100%;
+        min-width: 375px;
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .png {
+        width: 300px;
+        left: 50%;
+        position: relative;
+        display: flex;
+        justify-content: right;
+    }
+
+    .trabalho {
+        padding-left: 500px;
+        left: 50%;
+        position: relative;
+        display: flex;
+        margin: 30px;
+        justify-content: right;
+    }
+
+} 
+
+:root{
+    --cor1: #EEF5DB;
+    --cor2: #3B3561;
+    --cor3: #5386E4;
+    --cor4: #f19953;
+
+    --fonte-padrao:'Arvo', serif;
+    --fonte-destaque:'Arvo', serif; 
+    --fonte-semidestaque: 'Exo 2', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor1);
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden /* tirar rolagem */
+}
+
+header {
+    background-color: var(--cor2);
+    text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100vw;
+}
+
+header > h1 {
+    font-family: 'Arvo', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+header > p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.322);
+}
+
+main {
+    position: relative;
+    height: 100%;
+    min-width: 320px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    background-color: var(--cor3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article {
+    background-color: var(--cor4);
+    max-width: 1500px;
+    min-width: 320px;
+    padding: 20px;
+    font-family: 'Arvo', serif;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+article > h1 {
+    margin: auto;
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+
+article > p {
+    margin: 10px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+aside {
+    padding: 20px;
+    background-color: var(--cor4);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    max-width: 1500px;
+    min-width: 320px;
+}
+
+.hotbar {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-family: 'Arvo', serif;
+    font-size: 1em;
+}
+
+.foto {
+    border-radius: 100%;
+    width: 151px;
+    height: 150px;
+    padding-bottom: 15px;
+}
+
+.perfil-1 {
+    max-width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.perfil-2 {
+    max-width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.perfil-3 {
+    max-width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+aside > h2, h3 {
+    display: inline;
+}
+
+.conteudo {
+    background-color: var(--cor2);
+    min-width: 320px;
+    max-width: 1500px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#conteudo > h1 {
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+    padding-bottom: 20px;
+}
+
+.conteudo > h2 {
+    font-size: 1.2em;
+    text-indent: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+div.video {
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 80%;
+    height: 80%;
+}
+
+
